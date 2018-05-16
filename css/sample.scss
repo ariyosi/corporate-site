@@ -56,7 +56,8 @@ header{
     background: white;
     margin: 0;
     padding:0;
-
+    
+display: none; //追加
 z-index: 100; //追記
 
 
@@ -77,6 +78,7 @@ z-index: 100; //追記
   }
 }
 // header
+
 
 
 @media (max-width: 550px) {
@@ -672,6 +674,10 @@ h1{
     }  //news_li
 
 
+  .company_title{
+        margin-bottom: 0px;
+  }
+
   table{
     border-collapse: collapse;
     border-spacing: 0;
@@ -687,18 +693,23 @@ h1{
     color: #626262;
     font-size: 14px;
     font-size: 1.4rem;
-    padding: 12px 15px;
     text-align: left;
     border-bottom: 1px solid #E1E1E1;
+    
   }  //td
 
   th{
-    padding: 12px 15px;
+
+    padding: 20px 20px 20px 0;
+    color: #626262;
+    font-size: 14px;
+    font-size: 1.4rem;
     text-align: left;
     border-bottom: 1px solid #E1E1E1;
 
-    display: table-cell;
-    vertical-align: inherit;
+//    vertical-align: inherit;
+//    display: table-cell;
+    
   }  //th
 
 } //#main
@@ -728,7 +739,7 @@ h1{
     
             //スマホ
             @media (max-width: 551px){
-                display: none;  //サイドメニューの見出しを表示しない
+                display: none;  //サイドメニューの見出しを表示しない。
             }
 
             //pc
@@ -747,6 +758,10 @@ h1{
                         background-size: 4px 8px;
             
                     }//li
+                    
+                    a {
+                        text-decoration: none;
+                    }
 
             } //pc
 
